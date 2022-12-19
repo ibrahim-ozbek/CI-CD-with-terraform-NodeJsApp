@@ -1,0 +1,23 @@
+{
+  "name": "fdm-group",
+  "version": "1.0.0",
+  "description": "•\tSample Problem",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahim-ozbek/fdm-group.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibrahim-ozbek/fdm-group/issues"
+  },
+  "homepage": "https://github.com/ibrahim-ozbek/fdm-group#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
