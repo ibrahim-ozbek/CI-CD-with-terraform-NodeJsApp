@@ -10,7 +10,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t eaglehaslanded/fdm:latest .'
+				sh 'docker build -t eaglehaslanded/fdmm:latest .'
 			}
 		}
 
@@ -24,7 +24,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push eaglehaslanded/fdm:latest'
+				sh 'docker push eaglehaslanded/fdmm:latest'
 			}
 		}
 	}
