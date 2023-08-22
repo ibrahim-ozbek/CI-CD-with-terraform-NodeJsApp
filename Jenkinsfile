@@ -2,7 +2,7 @@ pipeline{
 	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('dockerhub-cred-fdm')
+		DOCKERHUB_CREDENTIALS=credentials('dockerhub-cred-node')
 	}
 
 	stages {
@@ -10,7 +10,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t eaglehaslanded/fdmm:latest .'
+				sh 'docker build -t eaglehaslanded/node:latest .'
 			}
 		}
 
@@ -24,7 +24,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push eaglehaslanded/fdmm:latest'
+				sh 'docker push eaglehaslanded/node:latest'
 			}
 		}
 	}
